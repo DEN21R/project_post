@@ -7,8 +7,11 @@ function Header() {
       <img src={mesk_logo} alt="" />
       <nav>
         <a href="">Главная</a>
+        <span className={styles.divider} />
         <a href="">Музыка</a>
+        <span className={styles.divider} />
         <a href="">Сообщества</a>
+        <span className={styles.divider} />
         <a href="">Друзья</a>
       </nav>
     </div>

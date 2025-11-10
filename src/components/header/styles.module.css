@@ -2,4 +2,25 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  gap: 368px;
+  padding: 38px 130px;
+  background-color: #3f5cc0;
+
+  nav {
+    display: flex;
+    gap: 60px;
+
+    .divider {
+      height: 25px;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    a {
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      color: #090808cc;
+      font-family: Montserrat;
+    }
+  }
 }
