@@ -3,10 +3,18 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: #3f5cc0cc;
+  gap: 25px;
+  padding: 16px;
+  border-radius: 15px;
 }
 .avatar {
   width: 42px;
   height: 42px;
   border-radius: 50%;
   object-fit: cover;
+}
+.divider {
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }

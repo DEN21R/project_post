@@ -12,7 +12,7 @@
 
     .divider {
       height: 25px;
-      border: 1px solid rgba(0, 0, 0, 0.5);
+      border: 1px solid #00000033;
     }
 
     a {

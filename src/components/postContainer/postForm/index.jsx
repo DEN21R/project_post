@@ -24,25 +24,27 @@ function PostForm() {
   }
 
   return (
-    <div className={styles.formContainer}>
-      <h2>Написать пост</h2>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div>
-          <label>Заголовок</label>
+    <div className={styles.postFormContainer}>
+      <h2 className={styles.postFormTitle}>Написать пост</h2>
+      <form onSubmit={handleSubmit(onSubmit)} className={styles.formContainer}>
+        <div className={styles.inputContainer}>
+          <label className={styles.labelPost}>Заголовок</label>
           <input
+            className={styles.inputPost}
             type="text"
             placeholder="Заголовок"
             {...register('title', { required: true })}
           />
-        </div>
-        <div>
-          <label>Текст поста</label>
+          <label className={styles.labelPost}>Текст поста</label>
           <textarea
+            className={styles.inputPost}
             placeholder="Введите текст..."
             {...register('text', { required: true })}
           ></textarea>
         </div>
-        <button type="submit">Публикация</button>
+        <button type="submit" className={styles.buttonPost}>
+          Публикация
+        </button>
       </form>
     </div>
   )

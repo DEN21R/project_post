@@ -1,4 +1,56 @@
+.postFormContainer {
+  padding: 60px 72px 386px;
+  background-color: #7d9fff;
+}
+.postFormTitle {
+  margin-bottom: 124px;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
 .formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   padding: 30px 26px 30px 67px;
   background-color: #3f5cc0cc;
+  border-radius: 15px;
+  gap: 28px;
+
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: center;
+    background-color: rgb(70, 98, 184);
+    padding: 5px 18px 58px;
+
+    .labelPost {
+      font-size: 10px;
+      font-weight: 700;
+      color: #1e3479;
+    }
+    .inputPost {
+      font-size: 16px;
+      font-weight: 700;
+      background-color: rgb(70, 98, 184);
+      border: none;
+      border-bottom: 2px solid #21322e21;
+      margin-bottom: 15px;
+    }
+    .inputPost::placeholder {
+      color: rgb(39, 56, 103);
+    }
+  }
+}
+
+.buttonPost {
+  width: 142px;
+  padding: 9px 17px;
+  background-color: #0d3d3066;
+  color: #090808cc;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
 }

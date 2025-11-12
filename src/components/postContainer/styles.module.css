@@ -1,5 +1,8 @@
 .postContainer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 110px;
+  padding: 64px 130px;
+  background-color: #5ecfff;
 }
