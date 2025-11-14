@@ -8,13 +8,16 @@ function Post({ title, text, id, avatar, onDelete }) {
       <span className={styles.divider} />
 
       <div>
-        <h4>{title}</h4>
-        <p>{text}</p>
+        <h4 className={styles.postTitle}>{title}</h4>
+        <p className={styles.postText}>{text}</p>
       </div>
 
-      <p>Id поста:{id}</p>
-
-      <button onClick={() => onDelete(id)}>Удалить</button>
+      <div>
+        <p className={styles.postId}>Id поста: {id}</p>
+        <button onClick={() => onDelete(id)} className={styles.postButton}>
+          Удалить
+        </button>
+      </div>
     </div>
   )
 }

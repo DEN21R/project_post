@@ -5,6 +5,11 @@ import styles from './styles.module.css'
 
 function PostList() {
   const [posts, setPosts] = useState([])
+  const [page, setPage] = useState(0)
+
+  const threePosts = 3
+
+  const visPost = posts.slice(page, page + threePosts)
 
   const fetchPost = async () => {
     try {
@@ -35,7 +40,7 @@ function PostList() {
   return (
     <div className={styles.postListContainer}>
       <h2 className={styles.postListTitle}>Список постов</h2>
-      {posts.map((el) => (
+      {visPost.map((el) => (
         <Post
           key={el.id}
           title={el.title}
@@ -45,6 +50,12 @@ function PostList() {
           onDelete={postDel}
         />
       ))}
+      <button
+        onClick={() => setPage((el) => (el + 3) % posts.length)}
+        className={styles.btnPage}
+      >
+        Далее
+      </button>
     </div>
   )
 }

@@ -16,5 +16,27 @@
 }
 .divider {
   height: 25px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid #00000033;
+}
+.postTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #090808cc;
+}
+.postText {
+  font-weight: 700;
+  color: #090808cc;
+}
+.postButton {
+  padding: 10px 9px;
+  background-color: #0d3d3066;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+.postId {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 39px;
 }
